@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanoaClub</title>
+    <link rel="stylesheet" href="onde.css">
+    <style>
+        /* CSS básico para o mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo3.png" alt="Logo do Restaurante" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Início</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contato.html">Entrega</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="mapa">
+        <h2>Localização do Restaurante</h2>
+        <div id="map"></div> <!-- O mapa será inserido aqui -->
+    </section>
+
+    <footer>
+        <p>KanoaClub</p>
+    </footer>
+
+    <!-- Importando o arquivo JavaScript do Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1PGf0A2SIaF10OAEUzWAnC5-CDwFtJac&callback=initMap" async defer></script>
+
+    <!-- Arquivo JS personalizado para configurar o mapa -->
+    <script src="maps.js"></script>
+
+</body>
+</html>

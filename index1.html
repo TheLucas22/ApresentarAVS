@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante KanoaClub</title>
+    <link rel="stylesheet" href="homelog.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo3.png" alt="Logo do KanoaClub">
+            <h1></h1>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="onde.html">Localização</a></li>
+                    <li><a href="contato.html">Entrega</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Seção de Boas-Vindas -->
+    <section id="home">
+        <div class="welcome-container">
+            <h2>Bem-vindo ao <span class="kanoa-club">KanoaClub</span></h2>
+            <p>Experimente o melhor da cozinha australiana com um toque brasileiro.</p>
+            <a href="menu.html" class="btn">Confira nossos pratos principais</a> <!-- Redireciona para menu.html -->
+        </div>
+    </section>
+    
+
+    <!-- Seção de Menu -->
+    <section id="menu">
+        <div class="container">
+            <h2>Nossos principais pratos</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="img/Ribs on the Barbie.jpg" alt="Ribs on the Barbie">
+                    <h3>Ribs on the Barbie</h3>
+                    <p>Costela de porco defumada, grelhada no fogo e coberta com molho barbecue.</p>
+                    <span>R$ 79,90</span>
+                </div>
+                <div class="item">
+                    <img src="img/Bloomin' Onion.jpg" alt="Bloomin' Onion">
+                    <h3>Bloomin' Onion</h3>
+                    <p>Cebola empanada e frita, servida com nosso molho especial.</p>
+                    <span>R$ 49,90</span>
+                </div>
+                <div class="item">
+                    <img src="img/Outback Steak.jpg" alt="Outback Steak">
+                    <h3>Contra-Filé</h3>
+                    <p>Filé de carne premium, temperado e grelhado à perfeição.</p>
+                    <span>R$ 89,90</span>
+                </div>
+                <div class="item">
+                    <img src="img/Outback Burger.jpg" alt="Outback Burger">
+                    <h3>Hamburguer Artesanal</h3>
+                    <p>Hambúrguer de carne de qualidade, servido com queijo, bacon crocante e molho exclusivo.</p>
+                    <span>R$ 49,90</span>
+                </div>
+                <div class="item">
+                    <img src="img/costela.jpg" alt="Salada Australiana">
+                    <h3>Costela Recheada</h3>
+                    <p>Costela macia, recheada com queijo e bacon, grelhada e coberta com molho barbecue.</p>
+                    <span>R$ 69,90</span>
+                </div>
+                <div class="item">
+                    <img src="img/pudim.jpg" alt="Pavê Australiano">
+                    <h3>Pudim Clássico</h3>
+                    <p>Pudim clássico, cremoso e leve, com cobertura de caramelo dourado.</p>
+                    <span>R$ 29,90</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section id="sobre">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Uma experiência incrível! Os pratos são deliciosos e o atendimento é excepcional. Recomendo muito!"</p>
+                    <span>- Maria Silva</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Sabor autêntico e ambiente acolhedor. A costela defumada é a melhor que já experimentei."</p>
+                    <span>- João Oliveira</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entrega</h2>
+            <p>Faça o cadastro e deixe registrado seu endereço</p>
+            <a href="contato.html" class="btn">Cadastre seu local de entrega</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>KanoaClub</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            const menuSection = document.querySelector('#menu');
+            const scrollOptions = {
+                top: menuSection.offsetTop,
+                behavior: 'smooth'
+            };
+            window.scrollTo(scrollOptions);
+        });
+        document.getElementById('hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+    </script>
+    
+    
+</body>
+</html>

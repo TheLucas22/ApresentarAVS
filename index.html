@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanoaClub</title>
+    <link rel="stylesheet" href="home1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo3.png" alt="Logo do Restaurante" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+                <!-- Menu Hambúrguer -->
+                <div class="menu-hamburguer" id="menuToggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Bem-vindo ao Restaurante KanoaClub</h1>
+            <p>Experimente o melhor restaurante na Orla da Praia</p>
+            <br>
+            <p>Cadastre-se e saiba mais!</p>
+        </div>
+    </section>
+
+    <!-- Imagem do restaurante -->
+    <section>
+        <img src="img/restaurante.jpg" alt="Imagem do Restaurante">
+    </section>
+
+    <!-- Seção sobre o restaurante -->
+    <section id="sobre-nos">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>O Restaurante KanoaClub oferece uma experiência única na Orla da Praia. Com pratos típicos que combinam o melhor da gastronomia brasileira e australiana, nosso objetivo é proporcionar momentos inesquecíveis para todos os nossos clientes. Venha nos visitar e aproveite um ambiente aconchegante com vista para o mar.</p>
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="container">
+            <h2>Onde ficamos localizados?</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>Ficamos localizados?</p>
+                    <span>Avenida Lucio Costa, 17970. Bairro: Recreio dos Bandeirantes.</span>
+                    <span>Horario de funcionamento</span>
+                    <span>segunda a sexta: 11:00 - 15:00</span>
+                    <span>Sábado e domingo: 11:00 - 17:00</span>
+                </div>
+                <div class="testimonial">
+                    <p>Quem somos?</p>
+                    <span>O Restaurante KanoaClub é um estabelecimento gastronômico que busca oferecer aos seus 
+                        clientes uma experiência única e acolhedora, com foco em pratos que combinam o melhor da gastronomia 
+                        brasileira e australiana. Localizado na Orla da Praia, o restaurante proporciona uma vista incrível 
+                        para o mar, criando o ambiente perfeito para desfrutar de uma refeição saborosa e relaxante.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Script para abrir e fechar o menu hambúrguer
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+    <footer>
+        <p>KanoaClub</p>
+    </footer>
+</body>
+</html>

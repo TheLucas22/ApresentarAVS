@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <img src="logo3.png" alt="Logo do Restaurante" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index1.html">Início</a></li>
+                    <li><a href="onde.html">Localização</a></li>
+                    <li><a href="cadastro.html">Endereço</a></li>
+                </ul>
+                <!-- Menu Hambúrguer -->
+                <div class="menu-hamburguer" id="menuToggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="menu">
+        <div class="container">
+            <h2>NOSSO MENU </h2>
+
+            <div class="menu-categorias">
+                <button class="categoria-btn" onclick="mostrarCategoria('pratos-principais')">Pratos Principais</button>
+                <button class="categoria-btn" onclick="mostrarCategoria('bebidas')">Bebidas</button>
+                <button class="categoria-btn" onclick="mostrarCategoria('sobremesas')">Sobremesas</button>
+            </div>
+
+            <!-- Pratos Principais -->
+            <div class="menu-items" id="pratos-principais">
+
+                <div class="item">
+                    <img src="img/Ribs on the Barbie.jpg" alt="Ribs on the Barbie">
+                    <h3>Costela ostela de porco</h3>
+    
+                    <span>R$ 79,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/hamburguer1.jpg" alt="Outback Steak">
+                    <h3>Hambúrguer Artesanal</h3>
+            
+                    <span>R$ 42,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/pizza.jpeg" alt="Bloomin' Onion">
+                    <h3>Pizza</h3>
+            
+                    <span>R$ 69,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/costela.jpg" alt="Ribs on the Barbie">
+                    <h3>Costela Recheada</h3>
+                   
+                    <span>R$ 69,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/picanha.jpg" alt="Outback Steak">
+                    <h3>Picanha</h3>
+                   
+                    <span>R$ 89,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/pao.jpg" alt="Bloomin' Onion">
+                    <h3>Pão de Alho</h3>
+                    
+                    <span>R$ 29,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/salmao.jpg" alt="Ribs on the Barbie">
+                    <h3>Salmão Grelhado</h3>
+                   
+                    <span>R$ 49,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/camarao.jpg" alt="Ribs on the Barbie">
+                    <h3>Camarão</h3>
+                    
+                    <span>R$ 79,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/pastel.jpg" alt="Outback Steak">
+                    <h3>Pastel de Carne</h3>
+                    
+                    <span>R$ 8,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/cebola.jpg" alt="Bloomin' Onion">
+                    <h3>Cebola Frita</h3>
+                    
+                    <span>R$ 39,90</span>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-items" id="bebidas" style="display: none;">
+                <div class="item">
+
+                    <img src="img/coca.jpg" alt="Cocktail">
+                    <h3>Coca-Cola</h3>
+                    
+                    <span>R$ 8,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/cerveja.jpg" alt="Cerveja Artesanal">
+                    <h3>Cerveja Artesanal</h3>
+                    
+                    <span>R$ 14,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/chá.jpg" alt="Suco Natural">
+                    <h3>Chá Cranberry</h3>
+                  
+                    <span>R$ 14,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/suco.jpg" alt="Cocktail">
+                    <h3>Suco Natural</h3>
+                   
+                    <span>R$ 12,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/guarana.jpg" alt="Cerveja Artesanal">
+                    <h3>Guaraná</h3>
+                   
+                    <span>R$ 10,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/agaugas.jpg" alt="Suco Natural">
+                    <h3>Água com gás</h3>
+                    
+                    <span>R$ 8,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/vinho.jpg" alt="Cocktail">
+                    <h3>Vinho</h3>
+        
+                    <span>R$ 14,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/energetico.png" alt="Cerveja Artesanal">
+                    <h3>Red Bull</h3>
+
+                    <span>R$ 14,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/agua.jpg" alt="Suco Natural">
+                    <h3>Água sem gás</h3>
+                    
+                    <span>R$ 3,99</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/pepsi.jpg" alt="Suco Natural">
+                    <h3>Pepsi</h3>
+                    
+                    <span>R$ 7,90</span>
+                </div>
+            </div>
+
+            <!-- Sobremesas -->
+            <div class="menu-items" id="sobremesas" style="display: none;">
+
+                <div class="item">
+                    <img src="img/pudim.jpg" alt="Brownie com Sorvete">
+                    <h3>Pudim</h3>
+                   
+                    <span>R$ 29,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/bolo.jpg" alt="Cheesecake">
+                    <h3>Bolo de chocolate</h3>
+                   
+                    <span>R$ 24,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/tora.jpg" alt="Pavlova">
+                    <h3>Torta de chocolate</h3>
+                   
+                    <span>R$ 21,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/brow.jpg" alt="Brownie com Sorvete">
+                    <h3>Brownie com Sorvete</h3>
+                    
+                    <span>R$ 19,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/brigadeiro.jpg" alt="Brownie com Sorvete">
+                    <h3>Brigadeiro</h3>
+                
+                    <span>R$ 5,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/mousse.jpg" alt="Cheesecake">
+                    <h3>Mousse</h3>
+                    
+                    <span>R$ 14,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/tortalimao.jpg" alt="Pavlova">
+                    <h3>Torta de limão</h3>
+    
+                    <span>R$ 27,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/palha.jpg" alt="Brownie com Sorvete">
+                    <h3>Palha Italiana</h3>
+            
+                    <span>R$ 12,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/bombom.jpg" alt="Cheesecake">
+                    <h3>Bombom de uva na travessa</h3>
+                    
+                    <span>R$ 24,90</span>
+                </div>
+
+                <div class="item">
+                    <img src="img/maça.jpg" alt="Pavlova">
+                    <h3>Maçã do amor</h3>
+    
+                    <span>R$ 12,90</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>KanoaClub</p>
+        </div>
+    </footer>
+
+    <!-- Script para alternar as categorias do menu -->
+    <script>
+        function mostrarCategoria(categoria) {
+            // Oculta todas as categorias
+            const categorias = document.querySelectorAll('.menu-items');
+            categorias.forEach(cat => cat.style.display = 'none');
+
+            // Mostra a categoria selecionada
+            document.getElementById(categoria).style.display = 'flex';
+        }
+        
+        let carrinho = [];
+
+        // Função para mostrar as categorias
+        function mostrarCategoria(categoria) {
+            const categorias = document.querySelectorAll('.menu-items');
+            categorias.forEach(cat => cat.style.display = 'none');
+            document.getElementById(categoria).style.display = 'flex';
+        }
+
+        // Função para adicionar itens ao carrinho
+        function adicionarAoCarrinho(nome, preco) {
+            carrinho.push({ nome, preco });
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(nome + " foi adicionado ao seu carrinho!");
+        }
+         // Script para abrir e fechar o menu hambúrguer
+         const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: url("../imgs/teste.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.corsa {
+    background-color: rgba(255, 255, 255, 0.95); /* Branco com leve transparência */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Redução da intensidade da sombra */
+    width: 550px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.corsa:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2c3e50; /* Azul-escuro sofisticado */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+p {
+    color: #7f8c8d; /* Cinza suave e moderno */
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+label {
+    color: #34495e; /* Azul escuro mais vibrante */
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left; /* Alinha os labels à esquerda */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7; /* Cinza-claro para um design limpo */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2c3e50;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db; /* Azul vibrante para foco */
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2); /* Sombra leve em azul */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e67e22; /* Laranja suave e moderna */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #d35400; /* Tom laranja mais escuro no hover */
+    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.2);
+}
+
+.error-message {
+    color: #c0392b;
+    background-color: rgba(192, 57, 43, 0.1);
+    border: 1px solid #c0392b;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .corsa {
+        width: 90%;
+        padding: 30px;
+    }
+}

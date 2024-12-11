@@ -1,0 +1,417 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2c3e50; /* Azul escuro para o cabeçalho */
+    color: white;
+    padding: 15px 0; /* Padding uniforme para o topo e o rodapé do header */
+}
+
+header .header-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 120px; /* Tamanho do logo */
+    height: auto;
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os itens de navegação */
+}
+
+header nav ul li {
+    margin: 0; /* Removida margem lateral */
+}
+
+/* Aplica a fonte e a cor específicas ao KanoaClub */
+@font-face {
+    font-family: 'ADLaM Display Regular';
+    src: url('caminho/para/sua/fonte/ADLaM_Display_Regular.ttf') format('truetype');
+}
+
+.kanoa-club {
+    font-family: 'ADLaM Display Regular', sans-serif; /* Altere para a fonte desejada */
+    color: #FF6347;  /* Cor do texto - exemplo: Tomate */
+    font-size: 70px;   /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: normal; /* Defina o peso da fonte, se necessário */
+}
+
+
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e; /* Efeito de hover com fundo azul mais escuro */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos de responsividade para o header */
+@media (max-width: 768px) {
+    header img {
+        width: 120px; /* Tamanho do logo reduzido para telas menores */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Navegação em coluna em telas pequenas */
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        padding: 10px 0;
+    }
+}
+
+/* Seção de Boas-Vindas */
+#welcome {
+    background-color: #34495e;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+#welcome h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#welcome p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#welcome .btn {
+    background-color: #e67e22; /* Laranja suave */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#welcome .btn:hover {
+    background-color: #d35400; /* Laranja mais escuro para o hover */
+}
+
+/* Seção de Menu */
+#menu {
+    padding: 50px 0;
+    background-color: #ecf0f1; /* Cinza claro para o fundo */
+    color: #2c3e50;
+}
+
+#menu h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 250px; /* Mantém as imagens com o mesmo tamanho */
+    object-fit: cover;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.item p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e67e22; /* Laranja */
+    font-size: 1.2rem;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Depoimentos */
+#sobre {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    font-weight: bold;
+    color: #e67e22; /* Laranja */
+    font-size: 1.1rem;
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: #2c3e50; /* Azul escuro */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#contato .btn {
+    padding: 12px 25px;
+    background-color: #e67e22; /* Laranja suave */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#contato .btn:hover {
+    background-color: #d35400; /* Laranja mais escuro para o hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #34495e; /* Azul escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-container p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #menu h2 {
+        font-size: 2rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header img {
+        width: 120px; /* Tamanho menor em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+}
+
+/* Estilo para a Seção de Boas-Vindas */
+#home {
+    background-color: #ebe8e8;
+    color: #2c3e50;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.welcome-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#home .btn {
+    background-color: #e67e22; /* Laranja */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#home .btn:hover {
+    background-color: #d35400; /* Laranja mais escuro para o hover */
+    cursor: pointer;
+}
+
+/* Estilo do Menu Hambúrguer */
+.hamburger {
+    display: none; /* Esconde o ícone de hambúrguer por padrão */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Exibindo o ícone de hambúrguer em telas pequenas */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links ul {
+        display: none; /* Oculta o menu por padrão em telas pequenas */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+        z-index: 100;
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    .nav-links.active ul {
+        display: flex; /* Mostra o menu quando o ícone de hambúrguer for clicado */
+    }
+
+    .nav-links ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+        background-color: #34495e;
+        border-radius: 5px;
+    }
+}
